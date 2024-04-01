@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Monitor Vote</title>
+</head>
+<body>
+  <h1 class="title" style="text-align: center;">Class Monitor Vote</h1>
+  <div id="totalVotesContainer">
+    <h2 style="text-align: center;">Total Votes: <span id="totalVotes">0</span></h2>
+  </div>
+  <form id="votingForm">
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" required>
+    <label for="chooseMonitor">Choose Monitor:</label>
+    <select id="chooseMonitor">
+      <option value="suresh">Suresh</option>
+      <option value="deepank">Deepank</option>
+      <option value="abhik">Abhik</option>
+    </select>
+    <button type="submit">Vote</button>
+  </form>
+
+  <div class="monitor-section" id="sureshSection">
+    <h2 class="monitor-name">Suresh</h2>
+    <div id="sureshVotes" class="votes-container">Votes: 0</div>
+  </div>
+  <div class="monitor-section" id="deepankSection">
+    <h2 class="monitor-name">Deepank</h2>
+    <div id="deepankVotes" class="votes-container">Votes: 0</div>
+  </div>
+  <div class="monitor-section" id="abhikSection">
+    <h2 class="monitor-name">Abhik</h2>
+    <div id="abhikVotes" class="votes-container">Votes: 0</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
